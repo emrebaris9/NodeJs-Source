@@ -1,0 +1,32 @@
+html 
+    head    
+        title merhaba pug
+
+        body
+            // değişken   tanımlama 
+            - var okul = 'A üniversitesi'
+            - var sehir = 'İzmir'
+            = okul
+            br
+            | Bulunduğu şehir #{ sehir.toUpperCase() }
+
+            hr
+            - var sayi = 12;
+            if !sayi
+                |sayı yok!
+            else if sayi == 12
+                | Sayı 12
+            else 
+                | Sayı 12 değil
+            hr
+
+            span(style="color: red; background-color:black") 
+                | Merhaba #{ name } 
+            br
+            include footer.pug
+
+            hr
+
+            ul
+                each val in [sayi,sayi-1,sayi-11]
+                    li= val
