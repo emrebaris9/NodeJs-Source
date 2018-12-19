@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema;   
 
+// preparing schema
 const BookSchema = new Schema({
     
+    user_Id:{
+        type:mongoose.Schema.Types.ObjectId
+        },
     title: {
         type: String,
         required: true

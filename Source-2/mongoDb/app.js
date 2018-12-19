@@ -11,6 +11,7 @@ var books = require('./routes/books');
 
 var app = express();
 
+//mongo
 mongoose.connect('mongodb://localhost/emre1',{ useNewUrlParser: true })
 mongoose.connection.on('open', () => {
   console.log("MongoDb: Connected")
