@@ -1,4 +1,4 @@
-# React & Redux Movie App Backend
+# Movie App Backend
 That Restful API develop with Node.JS and Express.
 
 ## How to install
@@ -17,7 +17,7 @@ DB_NAME=xxx
 ## Run the app
 `npm start:dev` // for locally
 
-## Endpoints
+
 
 | Route | HTTP Verb	 | POST body	 | Description	 |
 | --- | --- | --- | --- |
