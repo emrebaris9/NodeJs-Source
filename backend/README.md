@@ -19,9 +19,9 @@ DB_NAME=xxx
 | Route | HTTP Verb	 | POST body	 | Description	 |
 | --- | --- | --- | --- |
 | /api/movies | `GET` | Empty | List all movies. // Bütün filmleri getirir |
-| /api/movies | `POST` | {'title':'foo', 'cover':'cover url' } | Create a new movie. // Yeni bir film ekler |
+| /api/movies | `POST` | {'title':'A_Film', 'cover':'cover url' } | Create a new movie. // Yeni bir film ekler |
 | /api/movies/:_id | `GET` | Empty | Get a movie. // id ile filmi getirir |
-| /api/movies/:_id | `PUT` | {'title':'foo', 'cover':'new cover url'} | Update a movie with new info. // filmi günceller değiştirir |
+| /api/movies/:_id | `PUT` | {'title':'A_Film', 'cover':'new cover url'} | Update a movie with new info. // filmi günceller değiştirir |
 | /api/movies/:_id | `DELETE` | Empty | Delete a movie. |
 
 
