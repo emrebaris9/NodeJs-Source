@@ -8,22 +8,21 @@ Clone this folder and install dependencies.
 
 ## Enviroments variables
 Create a file named ".env" in the root directory and fill its contents as follows.
-
-```ruby
+( Backend klasörü içinde .env dosyası oluşturarak içine mlabda konfigüre ettiğiniz bilgileri girin.
+    db_host için db adresindeki username : password ve yanındaki bileşenleri girin
+    db_name ise mlab de oluşturuğunuz proje ismini girin.                             )
+```
 DB_HOST=xxx
 DB_NAME=xxx
 ```
 
-## Run the app
-`npm start:dev` // for locally
-
-
-
 | Route | HTTP Verb	 | POST body	 | Description	 |
 | --- | --- | --- | --- |
-| /api/movies | `GET` | Empty | List all movies. |
-| /api/movies | `POST` | {'title':'foo', 'cover':'cover url' } | Create a new movie. |
-| /api/movies/:_id | `GET` | Empty | Get a movie. |
-| /api/movies/:_id | `PUT` | {'title':'foo', 'cover':'new cover url'} | Update a movie with new info. |
+| /api/movies | `GET` | Empty | List all movies. // Bütün filmleri getirir |
+| /api/movies | `POST` | {'title':'foo', 'cover':'cover url' } | Create a new movie. // Yeni bir film ekler |
+| /api/movies/:_id | `GET` | Empty | Get a movie. // id ile filmi getirir |
+| /api/movies/:_id | `PUT` | {'title':'foo', 'cover':'new cover url'} | Update a movie with new info. // filmi günceller değiştirir |
 | /api/movies/:_id | `DELETE` | Empty | Delete a movie. |
 
+
+"Cover ile fotoğraf linki adresleyerek fotoğrafları görüntüleyebilirsiniz."
